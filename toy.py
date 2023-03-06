@@ -17,7 +17,7 @@ Frob_bar = frobenius_avg(mlist,frob_weights)
 
 #Compute Wass mean and Riemann barycenter
 [Wassbar,Wtolvec]=wass_meanM(mlist,weights = weights,tollr=2e-8,imax = 10)
-[BAR,IT,TOLVEC]=RiemBar(k_init=1,list_of_mat=mlist, max_iter=200, tollr=1e-12, weights=weights,corr_fact = 0)#problemino: mi viene una matrice che non è definita positiva
+[BAR,IT,TOLVEC]=RiemBar(k_init=1,list_of_mat=mlist, max_iter=200, tollr=1e-12, weights=weights,corr_fact = 0)
 
 # Normalize barycenters s.t. the diagonal elements are equal to 1 (if similarity matrices are input, the Frobenius mean
 # is already normalized)
